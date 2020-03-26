@@ -1,13 +1,13 @@
 {
   "name": "insomnia-plugin-brauzie",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Exposes the JWT obtained by brauzie as ENV Var for use in Bearer Authorization for local development purposes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "iilei • Jochen Preusche <iilei@users.noreply.github.com>",
-  "license": "BSD 3",
+  "license": "BSD-3-Clause",
   "insomnia": {
     "name": "brauzie",
     "description": "Exposes the JWT obtained by brauzie as ENV Var for use in Bearer Authorization"
