@@ -1,3 +1,4 @@
 .idea
 *.gif
 *.tgz
+node_modules

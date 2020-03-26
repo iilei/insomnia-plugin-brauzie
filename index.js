@@ -1,7 +1,3 @@
-/**
- * Example template tag that generates a random number
- * between a user-provided MIN and MAX
- */
 function status(response) {
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response)
@@ -29,7 +25,7 @@ module.exports.templateTags = [{
     },
   ],
   async run(context, jwt, prop) {
-    const token = await fetch(jwt)
+    const token = await fetch(jwt, {cache: "reload"})
       .then(status)
       .then(response => response.json().then(data => data[ prop ])
       )
